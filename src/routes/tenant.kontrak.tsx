@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel } from "@/components/portal/ui";
-import { tenant, rupiah } from "@/data/ernala";
+import { tenant, rupiah } from "@/data/exc-kost";
 import { FileText, Download } from "lucide-react";
 
 function Page() {

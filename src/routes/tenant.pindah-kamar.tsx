@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/portal/ui";
-import { rooms, tenant, rupiah } from "@/data/ernala";
+import { rooms, tenant, rupiah } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 function Page() {

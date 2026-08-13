@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { complaintsAdmin } from "@/data/ernala";
+import { complaintsAdmin } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 function Page() {

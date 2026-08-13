@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard, StatusBadge } from "@/components/portal/ui";
-import { tenant, tenantBills, tenantTickets, announcements, tenantActivity, rupiah } from "@/data/ernala";
+import { tenant, tenantBills, tenantTickets, announcements, tenantActivity, rupiah } from "@/data/exc-kost";
 import { BedDouble, ReceiptText, Wrench, CalendarDays } from "lucide-react";
 
 export default Overview;
@@ -10,7 +10,7 @@ function Overview() {
   const bill = tenantBills[0];
   return (
     <>
-      <PageHeader title={`Halo, ${tenant.name.split(" ")[0]} 👋`} description="Ini ringkasan hunianmu di Ernala Indekost bulan ini."
+      <PageHeader title={`Halo, ${tenant.name.split(" ")[0]} 👋`} description="Ini ringkasan hunianmu di Exc Kost bulan ini."
         actions={<><Button asChild variant="outline" size="sm"><Link to="/tenant/maintenance">Lapor kerusakan</Link></Button>
         <Button asChild variant="cta" size="sm"><Link to="/tenant/tagihan">Bayar tagihan</Link></Button></>} />
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

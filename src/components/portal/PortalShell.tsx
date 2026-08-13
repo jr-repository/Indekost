@@ -32,7 +32,7 @@ export function PortalShell({
         <div className="flex h-16 items-center gap-2.5 px-5">
           <span className="grid h-9 w-9 place-items-center rounded-[10px] bg-accent font-display text-sm font-extrabold text-accent-foreground">E</span>
           <div className="leading-tight">
-            <p className="font-display text-sm font-extrabold">Ernala</p>
+            <p className="font-display text-sm font-extrabold">Exc Kost</p>
             <p className="text-[11px] text-sidebar-foreground/60">{badge}</p>
           </div>
           <button className="ml-auto lg:hidden" onClick={() => setOpen(false)} aria-label="Tutup menu">

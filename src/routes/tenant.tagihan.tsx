@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { tenantBills, rupiah } from "@/data/ernala";
+import { tenantBills, rupiah } from "@/data/exc-kost";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { toast } from "sonner";
 

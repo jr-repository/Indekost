@@ -1,6 +1,6 @@
 
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { tenantPayments, rupiah } from "@/data/ernala";
+import { tenantPayments, rupiah } from "@/data/exc-kost";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 

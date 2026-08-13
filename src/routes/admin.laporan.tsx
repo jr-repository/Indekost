@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard } from "@/components/portal/ui";
-import { revenueSeries, occupancySeries, roomTypeMix, rupiah } from "@/data/ernala";
+import { revenueSeries, occupancySeries, roomTypeMix, rupiah } from "@/data/exc-kost";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Download } from "lucide-react";
 

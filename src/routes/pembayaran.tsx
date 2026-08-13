@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { rupiah } from "@/data/ernala";
+import { rupiah } from "@/data/exc-kost";
 import { Copy, CheckCircle2, Clock, Landmark, QrCode, Wallet } from "lucide-react";
 import { toast } from "sonner";
 
@@ -71,7 +71,7 @@ function Payment() {
                 <div className="space-y-2 text-[14px]">
                   <p className="text-muted-foreground">Transfer ke rekening:</p>
                   <p className="font-display text-lg font-bold text-primary">BCA 500 123 4567</p>
-                  <p className="text-muted-foreground">a.n. PT Ernala Hunian Nyaman</p>
+                  <p className="text-muted-foreground">a.n. PT Exc Kost Hunian Nyaman</p>
                   <Button variant="outline" size="sm" className="mt-2">Unggah bukti transfer</Button>
                 </div>
               )}

@@ -3,7 +3,7 @@ import { PublicLayout } from "@/components/site/PublicLayout";
 import { SectionHead } from "./index";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { facilities, img } from "@/data/ernala";
+import { facilities, img } from "@/data/exc-kost";
 import * as Icons from "lucide-react";
 
 const showcase = [
@@ -19,7 +19,7 @@ function Facilities() {
       <div className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <p className="text-xs text-muted-foreground"><Link to="/" className="hover:text-accent">Home</Link> / Facilities</p>
-          <h1 className="mt-3 font-display text-4xl font-extrabold text-primary">Fasilitas Ernala</h1>
+          <h1 className="mt-3 font-display text-4xl font-extrabold text-primary">Fasilitas Exc Kost</h1>
           <p className="mt-3 max-w-2xl text-[15px] text-muted-foreground">
             Kami merancang setiap sudut agar penghuni bisa istirahat, bekerja, dan bersosialisasi dengan nyaman.
           </p>

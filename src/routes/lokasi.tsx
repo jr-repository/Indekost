@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { brand, nearby, img } from "@/data/ernala";
+import { brand, nearby, img } from "@/data/exc-kost";
 import { MapPin, TrainFront, Car, Bike, Clock, Phone } from "lucide-react";
 
 function Location() {
@@ -19,14 +19,14 @@ function Location() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-2xl border border-border">
           <div className="relative">
-            <img src={img.map} alt="Peta lokasi Ernala Indekost" className="h-[380px] w-full object-cover" />
+            <img src={img.map} alt="Peta lokasi Exc Kost" className="h-[380px] w-full object-cover" />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <span className="grid h-12 w-12 place-items-center rounded-full bg-accent text-accent-foreground shadow-lg">
                 <MapPin className="h-6 w-6" />
               </span>
             </div>
             <div className="absolute bottom-5 left-5 rounded-2xl bg-card p-5 shadow-[var(--shadow-lift)]">
-              <p className="font-display text-sm font-bold text-primary">Ernala Indekost Cisauk</p>
+              <p className="font-display text-sm font-bold text-primary">Exc Kost Cisauk</p>
               <p className="mt-1 max-w-xs text-[12px] text-muted-foreground">{brand.address}</p>
               <Button variant="cta" size="sm" className="mt-3">Buka di Google Maps</Button>
             </div>

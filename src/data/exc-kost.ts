@@ -1,10 +1,10 @@
 export const brand = {
-  name: "Ernala Indekost",
-  full: "Ernala Indekost Cisauk BSD",
+  name: "Exc Kost",
+  full: "Exc Kost Cisauk BSD",
   tagline: "Kos modern, nyaman, dan terawat di Cibogo — Cisauk, BSD.",
   address: "Jl. Cibogo Raya No. 21, Cibogo, Cisauk, Kabupaten Tangerang, Banten 15341",
   phone: "+62 812-9045-7781",
-  email: "halo@ernalaindekost.id",
+  email: "halo@exckost.id",
   hours: "Setiap hari, 08.00 – 21.00 WIB",
 };
 
@@ -90,10 +90,10 @@ export const rooms: Room[] = [
     description: "Kamar premium sudut dengan jendela besar, area duduk, dan akses langsung ke rooftop lounge.",
   },
   {
-    id: "stu-c2", code: "C-305", name: "Studio Ernala", type: "Studio", price: 2200000, size: "4.5 x 5 m", floor: 3, capacity: 2,
+    id: "stu-c2", code: "C-305", name: "Studio Exc Kost", type: "Studio", price: 2200000, size: "4.5 x 5 m", floor: 3, capacity: 2,
     status: "Tersedia", availableFrom: "20 Sep 2026", cover: img.room6, gallery: [img.room6, img.kitchen, img.bathroom, img.rooftop],
     facilities: [...baseFac, "Water heater", "Mini kitchen", "Kulkas", "Smart TV"], highlight: "Unit terlengkap", rating: 5.0, reviews: 19,
-    description: "Unit studio terlengkap dengan mini kitchen dan kulkas pribadi. Hunian paling mandiri di Ernala.",
+    description: "Unit studio terlengkap dengan mini kitchen dan kulkas pribadi. Hunian paling mandiri di Exc Kost.",
   },
 ];
 
@@ -113,7 +113,7 @@ export const facilities = [
 ];
 
 export const gallery = [
-  { src: img.facade, cat: "Bangunan", caption: "Fasad Ernala Indekost" },
+  { src: img.facade, cat: "Bangunan", caption: "Fasad Exc Kost" },
   { src: img.room3, cat: "Kamar", caption: "Deluxe Sage" },
   { src: img.lounge, cat: "Common Area", caption: "Common lounge lantai 1" },
   { src: img.kitchen, cat: "Common Area", caption: "Pantry bersama" },
@@ -145,17 +145,17 @@ export const testimonials = [
 ];
 
 export const faqs = [
-  { q: "Berapa minimum masa sewa di Ernala?", a: "Minimum sewa adalah 3 bulan untuk semua tipe kamar. Tersedia diskon 5% untuk kontrak 6 bulan dan 10% untuk 12 bulan." },
+  { q: "Berapa minimum masa sewa di Exc Kost?", a: "Minimum sewa adalah 3 bulan untuk semua tipe kamar. Tersedia diskon 5% untuk kontrak 6 bulan dan 10% untuk 12 bulan." },
   { q: "Apakah harga sudah termasuk listrik dan air?", a: "Harga sudah termasuk air, kebersihan area umum, Wi-Fi, dan iuran keamanan. Listrik menggunakan token per kamar dengan rata-rata Rp150.000–250.000 per bulan." },
   { q: "Apakah bisa survey dulu sebelum booking?", a: "Bisa. Ajukan jadwal survey lewat halaman Ajukan Survey, pilih tanggal dan jam, lalu tim kami mengonfirmasi maksimal 1x24 jam." },
   { q: "Berapa deposit yang harus dibayar?", a: "Deposit sebesar 1 bulan sewa, dikembalikan penuh saat check-out bila tidak ada kerusakan di luar kewajaran." },
   { q: "Apakah menerima pasangan suami istri?", a: "Menerima, khusus tipe Deluxe kapasitas 2 dan Studio, dengan menyertakan dokumen pendukung saat check-in online." },
   { q: "Bagaimana aturan tamu?", a: "Tamu diperbolehkan sampai pukul 22.00 WIB dan wajib didaftarkan lewat menu Visitor di portal penghuni. Menginap perlu izin pengelola." },
-  { q: "Apakah boleh membawa hewan peliharaan?", a: "Untuk kenyamanan bersama, hewan peliharaan belum diizinkan di area indoor Ernala." },
+  { q: "Apakah boleh membawa hewan peliharaan?", a: "Untuk kenyamanan bersama, hewan peliharaan belum diizinkan di area indoor Exc Kost." },
   { q: "Metode pembayaran apa saja yang tersedia?", a: "Transfer bank (BCA, Mandiri, BNI), QRIS, dan virtual account. Semua tagihan muncul otomatis di portal penghuni." },
 ];
 
-export const whyErnala = [
+export const whyExcKost = [
   { title: "5 menit ke Stasiun Cisauk", desc: "Commuter line ke Tanah Abang dan akses cepat Intermoda BSD.", icon: "TrainFront" },
   { title: "Dikelola profesional", desc: "Tim on-site, SOP kebersihan, dan portal penghuni digital.", icon: "BadgeCheck" },
   { title: "Harga transparan", desc: "Tanpa biaya tersembunyi. Semua tagihan tercatat rapi.", icon: "ReceiptText" },
@@ -177,7 +177,7 @@ export const tenant = {
   phone: "+62 813-2211-9087",
   avatar: "https://i.pravatar.cc/120?img=47",
   room: rooms[2],
-  contractNo: "ERN/CTR/2026/0142",
+  contractNo: "EXC/CTR/2026/0142",
   startDate: "1 Feb 2026",
   endDate: "31 Jan 2027",
   deposit: 1750000,
@@ -342,7 +342,7 @@ export const housekeeping = [
 ];
 
 export const promos = [
-  { code: "ERNALA12", name: "Diskon kontrak 12 bulan", value: "10%", period: "1 Jul – 30 Sep 2026", used: 14, status: "Aktif" },
+  { code: "EXC12", name: "Diskon kontrak 12 bulan", value: "10%", period: "1 Jul – 30 Sep 2026", used: 14, status: "Aktif" },
   { code: "SURVEYNOW", name: "Potongan survey to booking", value: "Rp250.000", period: "1 Agu – 31 Agu 2026", used: 6, status: "Aktif" },
   { code: "REFER50", name: "Referral penghuni", value: "Rp500.000", period: "Sepanjang tahun", used: 9, status: "Aktif" },
   { code: "NEWYEAR26", name: "Promo awal tahun", value: "5%", period: "1 Jan – 28 Feb 2026", used: 21, status: "Berakhir" },
@@ -363,24 +363,24 @@ export const notifications = [
 ];
 
 export const users = [
-  { name: "Nadia Prameswari", email: "nadia@ernala.id", role: "Manager", last: "13 Agu 2026 09.12", status: "Aktif" },
-  { name: "Rio Ardiansyah", email: "rio@ernala.id", role: "Sales / CRM", last: "13 Agu 2026 08.40", status: "Aktif" },
-  { name: "Pak Yusuf", email: "yusuf@ernala.id", role: "Teknisi", last: "12 Agu 2026 17.05", status: "Aktif" },
-  { name: "Ibu Nur", email: "nur@ernala.id", role: "Housekeeping", last: "13 Agu 2026 07.10", status: "Aktif" },
-  { name: "Owner Ernala", email: "owner@ernala.id", role: "Super Admin", last: "11 Agu 2026 21.30", status: "Aktif" },
+  { name: "Nadia Prameswari", email: "nadia@exckost.id", role: "Manager", last: "13 Agu 2026 09.12", status: "Aktif" },
+  { name: "Rio Ardiansyah", email: "rio@exckost.id", role: "Sales / CRM", last: "13 Agu 2026 08.40", status: "Aktif" },
+  { name: "Pak Yusuf", email: "yusuf@exckost.id", role: "Teknisi", last: "12 Agu 2026 17.05", status: "Aktif" },
+  { name: "Ibu Nur", email: "nur@exckost.id", role: "Housekeeping", last: "13 Agu 2026 07.10", status: "Aktif" },
+  { name: "Owner Exc Kost", email: "owner@exckost.id", role: "Super Admin", last: "11 Agu 2026 21.30", status: "Aktif" },
 ];
 
 export const auditLog = [
   { time: "13 Agu 2026 09.22", user: "Nadia", action: "Mengubah status booking BK-3020 menjadi Lunas", ip: "103.22.14.8" },
   { time: "13 Agu 2026 08.51", user: "Rio", action: "Menambahkan lead LEAD-2211", ip: "103.22.14.11" },
   { time: "12 Agu 2026 17.10", user: "Pak Yusuf", action: "Menutup tiket MTC-1102", ip: "103.22.14.30" },
-  { time: "12 Agu 2026 14.02", user: "Owner Ernala", action: "Memperbarui harga Room Type Premium", ip: "180.244.9.71" },
+  { time: "12 Agu 2026 14.02", user: "Owner Exc Kost", action: "Memperbarui harga Room Type Premium", ip: "180.244.9.71" },
   { time: "11 Agu 2026 10.44", user: "Nadia", action: "Mengirim notifikasi pemeliharaan ke lantai 3", ip: "103.22.14.8" },
 ];
 
 export const properties = [
-  { name: "Ernala Indekost Cisauk", address: "Jl. Cibogo Raya No. 21, Cisauk", rooms: 32, occ: "94%", status: "Aktif", cover: img.facade },
-  { name: "Ernala Annex (rencana)", address: "Jl. Cibogo Raya No. 25, Cisauk", rooms: 14, occ: "—", status: "Pembangunan", cover: img.building },
+  { name: "Exc Kost Cisauk", address: "Jl. Cibogo Raya No. 21, Cisauk", rooms: 32, occ: "94%", status: "Aktif", cover: img.facade },
+  { name: "Exc Kost Annex (rencana)", address: "Jl. Cibogo Raya No. 25, Cisauk", rooms: 14, occ: "—", status: "Pembangunan", cover: img.building },
 ];
 
 export const roomTypes = [

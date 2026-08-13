@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { rooms, rupiah } from "@/data/ernala";
+import { rooms, rupiah } from "@/data/exc-kost";
 import { ShieldCheck } from "lucide-react";
 
 function Booking() {
@@ -67,7 +67,7 @@ function Booking() {
             <Card className="rounded-2xl border-border p-6 shadow-none">
               <h2 className="font-display text-lg font-bold text-primary">3. Persetujuan</h2>
               <div className="mt-4 space-y-3 text-[13px] text-muted-foreground">
-                {["Saya menyetujui aturan hunian dan tata tertib Ernala Indekost.", "Saya memahami deposit dikembalikan penuh saat check-out tanpa kerusakan.", "Saya bersedia melengkapi dokumen KTP saat online check-in."].map((t) => (
+                {["Saya menyetujui aturan hunian dan tata tertib Exc Kost.", "Saya memahami deposit dikembalikan penuh saat check-out tanpa kerusakan.", "Saya bersedia melengkapi dokumen KTP saat online check-in."].map((t) => (
                   <label key={t} className="flex cursor-pointer items-start gap-2.5"><Checkbox defaultChecked className="mt-0.5" />{t}</label>
                 ))}
               </div>

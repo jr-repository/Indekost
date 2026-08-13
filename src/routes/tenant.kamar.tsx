@@ -2,7 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel } from "@/components/portal/ui";
-import { tenant, rupiah } from "@/data/ernala";
+import { tenant, rupiah } from "@/data/exc-kost";
 import { Check } from "lucide-react";
 
 function Page() {

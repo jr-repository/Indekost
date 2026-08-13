@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { housekeeping } from "@/data/ernala";
+import { housekeeping } from "@/data/exc-kost";
 
 export default function Page() {
   return (

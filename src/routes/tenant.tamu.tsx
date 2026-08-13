@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { visitors } from "@/data/ernala";
+import { visitors } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 function Page() {

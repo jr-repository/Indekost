@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { maintenanceAdmin } from "@/data/ernala";
+import { maintenanceAdmin } from "@/data/exc-kost";
 
 export default function Page() {
   return (

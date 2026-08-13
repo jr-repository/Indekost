@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { surveys } from "@/data/ernala";
+import { surveys } from "@/data/exc-kost";
 
 export default function Page() {
   return (

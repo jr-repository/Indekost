@@ -5,7 +5,7 @@ import { NotFoundPage } from "@/components/system/NotFoundPage";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { rooms, rupiah, nearby } from "@/data/ernala";
+import { rooms, rupiah, nearby } from "@/data/exc-kost";
 import { Star, Check, MapPin, Ruler, Users, Building2, CalendarDays } from "lucide-react";
 import { RoomCard } from "./index";
 
@@ -77,7 +77,7 @@ function RoomDetail() {
               <TabsContent value="desc" className="pt-6 text-[15px] leading-relaxed text-muted-foreground">
                 <p>{room.description}</p>
                 <p className="mt-4">
-                  Kamar dibersihkan menyeluruh sebelum penghuni baru masuk, dilengkapi perabot siap pakai, dan mendapatkan pemeriksaan rutin dari tim teknisi Ernala setiap bulan.
+                  Kamar dibersihkan menyeluruh sebelum penghuni baru masuk, dilengkapi perabot siap pakai, dan mendapatkan pemeriksaan rutin dari tim teknisi Exc Kost setiap bulan.
                 </p>
               </TabsContent>
               <TabsContent value="fac" className="pt-6">

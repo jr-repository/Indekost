@@ -2,7 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageHeader, StatusBadge } from "@/components/portal/ui";
-import { properties } from "@/data/ernala";
+import { properties } from "@/data/exc-kost";
 import { Plus } from "lucide-react";
 
 export default Properties;
@@ -10,7 +10,7 @@ export default Properties;
 function Properties() {
   return (
     <>
-      <PageHeader title="Properties" description="Daftar properti yang dikelola Ernala."
+      <PageHeader title="Properties" description="Daftar properti yang dikelola Exc Kost."
         actions={<Button variant="cta" size="sm"><Plus className="h-3.5 w-3.5" />Tambah properti</Button>} />
       <div className="grid gap-6 md:grid-cols-2">
         {properties.map((p) => (

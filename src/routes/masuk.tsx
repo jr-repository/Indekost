@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { img } from "@/data/ernala";
+import { img } from "@/data/exc-kost";
 import { ArrowLeft } from "lucide-react";
 
 function Login() {
@@ -12,12 +12,12 @@ function Login() {
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
       <div className="relative hidden lg:block">
-        <img src={img.corridor} alt="Koridor Ernala Indekost" className="h-full w-full object-cover" />
+        <img src={img.corridor} alt="Koridor Exc Kost" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-primary/72" />
         <div className="absolute inset-0 flex flex-col justify-between p-12 text-primary-foreground">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="grid h-9 w-9 place-items-center rounded-[10px] bg-accent font-display text-sm font-extrabold text-accent-foreground">E</span>
-            <span className="font-display text-lg font-extrabold">Ernala Indekost</span>
+            <span className="font-display text-lg font-extrabold">Exc Kost</span>
           </Link>
           <div>
             <h2 className="max-w-sm font-display text-3xl font-extrabold">Semua urusan kos, dalam satu portal.</h2>
@@ -44,8 +44,8 @@ function Login() {
                 <Button variant={role === "admin" ? "cta" : "outline"} onClick={() => setRole("admin")}>Admin</Button>
               </div>
               <div className="mt-6 space-y-4">
-                <div><Label className="text-[13px] text-muted-foreground">Email</Label><Input className="mt-1.5" defaultValue={role === "tenant" ? "rani.ayu@mail.com" : "nadia@ernala.id"} /></div>
-                <div><Label className="text-[13px] text-muted-foreground">Kata sandi</Label><Input className="mt-1.5" type="password" defaultValue="ernala2026" /></div>
+                <div><Label className="text-[13px] text-muted-foreground">Email</Label><Input className="mt-1.5" defaultValue={role === "tenant" ? "rani.ayu@mail.com" : "nadia@exckost.id"} /></div>
+                <div><Label className="text-[13px] text-muted-foreground">Kata sandi</Label><Input className="mt-1.5" type="password" defaultValue="exckost2026" /></div>
               </div>
               <Button asChild variant="cta" size="lg" className="mt-6 w-full">
                 <Link to={role === "tenant" ? "/tenant" : "/admin"}>Masuk ke {role === "tenant" ? "Portal Penghuni" : "Portal Admin"}</Link>

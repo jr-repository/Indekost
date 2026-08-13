@@ -1,5 +1,5 @@
 import { PortalShell, type NavItem } from "@/components/portal/PortalShell";
-import { tenant } from "@/data/ernala";
+import { tenant } from "@/data/exc-kost";
 import {
   LayoutDashboard, BedDouble, ReceiptText, CreditCard, FileText, Wrench,
   MessageSquareWarning, CalendarPlus, ArrowLeftRight, LogOut, Users, User, LifeBuoy,

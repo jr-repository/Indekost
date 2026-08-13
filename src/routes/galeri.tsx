@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { gallery, img } from "@/data/ernala";
+import { gallery, img } from "@/data/exc-kost";
 
 const cats = ["Semua", "Kamar", "Common Area", "Fasilitas", "Bangunan", "Lingkungan"];
 
@@ -17,8 +17,8 @@ function Gallery() {
       <div className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <p className="text-xs text-muted-foreground"><Link to="/" className="hover:text-accent">Home</Link> / Gallery</p>
-          <h1 className="mt-3 font-display text-4xl font-extrabold text-primary">Galeri Ernala</h1>
-          <p className="mt-3 max-w-2xl text-[15px] text-muted-foreground">Semua foto diambil di properti Ernala Indekost Cisauk.</p>
+          <h1 className="mt-3 font-display text-4xl font-extrabold text-primary">Galeri Exc Kost</h1>
+          <p className="mt-3 max-w-2xl text-[15px] text-muted-foreground">Semua foto diambil di properti Exc Kost Cisauk.</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ function Gallery() {
 
       <Dialog open={!!open} onOpenChange={(o) => !o && setOpen(null)}>
         <DialogContent className="max-w-4xl overflow-hidden p-0">
-          {open && <img src={open} alt="Foto Ernala" className="w-full object-contain" />}
+          {open && <img src={open} alt="Foto Exc Kost" className="w-full object-contain" />}
         </DialogContent>
       </Dialog>
     </PublicLayout>

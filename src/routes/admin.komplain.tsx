@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { complaintsAdmin } from "@/data/ernala";
+import { complaintsAdmin } from "@/data/exc-kost";
 
 export default function Page() {
   return (

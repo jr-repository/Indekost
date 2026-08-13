@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { roomUnits } from "@/data/ernala";
+import { roomUnits } from "@/data/exc-kost";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default Availability;

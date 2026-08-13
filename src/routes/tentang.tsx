@@ -3,7 +3,7 @@ import { PublicLayout } from "@/components/site/PublicLayout";
 import { SectionHead } from "./index";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { img, stats } from "@/data/ernala";
+import { img, stats } from "@/data/exc-kost";
 import { HeartHandshake, Sparkles, ShieldCheck, Leaf } from "lucide-react";
 
 const values = [
@@ -14,7 +14,7 @@ const values = [
 ];
 
 const timeline = [
-  { year: "2020", title: "Ernala berdiri", desc: "Dimulai dengan 12 kamar di Cibogo, Cisauk." },
+  { year: "2020", title: "Exc Kost berdiri", desc: "Dimulai dengan 12 kamar di Cibogo, Cisauk." },
   { year: "2022", title: "Ekspansi blok B & C", desc: "Menambah 20 kamar dan area common lounge." },
   { year: "2024", title: "Portal digital penghuni", desc: "Tagihan, maintenance, dan tamu dikelola dari satu portal." },
   { year: "2026", title: "Okupansi 94%", desc: "Rating penghuni 4,8/5 dengan 128 ulasan." },
@@ -24,11 +24,11 @@ function About() {
   return (
     <PublicLayout>
       <section className="relative overflow-hidden bg-primary text-primary-foreground">
-        <img src={img.facade} alt="Bangunan Ernala Indekost" className="absolute inset-0 h-full w-full object-cover opacity-25" />
+        <img src={img.facade} alt="Bangunan Exc Kost" className="absolute inset-0 h-full w-full object-cover opacity-25" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <h1 className="max-w-3xl font-display text-4xl font-extrabold sm:text-5xl">Kami membangun kos yang layak disebut rumah</h1>
           <p className="mt-5 max-w-2xl text-primary-foreground/80">
-            Ernala Indekost lahir dari pengalaman sederhana: mencari kos yang bersih, aman, dan dikelola dengan jelas ternyata sulit. Sejak 2020 kami memperbaikinya di Cisauk, BSD.
+            Exc Kost lahir dari pengalaman sederhana: mencari kos yang bersih, aman, dan dikelola dengan jelas ternyata sulit. Sejak 2020 kami memperbaikinya di Cisauk, BSD.
           </p>
           <div className="mt-10 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
             {stats.map((s) => (
@@ -43,7 +43,7 @@ function About() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
-          <img src={img.garden} alt="Taman Ernala" className="h-[380px] w-full rounded-2xl object-cover" />
+          <img src={img.garden} alt="Taman Exc Kost" className="h-[380px] w-full rounded-2xl object-cover" />
           <div>
             <SectionHead eyebrow="Nilai kami" title="Empat hal yang kami jaga setiap hari" />
             <div className="grid gap-5 sm:grid-cols-2">
@@ -78,7 +78,7 @@ function About() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-border bg-card px-8 py-14 text-center">
-          <h2 className="font-display text-3xl font-extrabold text-primary">Mau jadi bagian dari Ernala?</h2>
+          <h2 className="font-display text-3xl font-extrabold text-primary">Mau jadi bagian dari Exc Kost?</h2>
           <p className="mx-auto mt-3 max-w-lg text-muted-foreground">Lihat kamar yang tersedia bulan ini atau ajukan survey terlebih dulu.</p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <Button asChild variant="cta" size="lg"><Link to="/kamar">Lihat Kamar</Link></Button>

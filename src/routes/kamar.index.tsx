@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { rooms, rupiah, img } from "@/data/ernala";
+import { rooms, rupiah, img } from "@/data/exc-kost";
 import { SlidersHorizontal, LayoutGrid } from "lucide-react";
 
 const types = ["Standard", "Deluxe", "Premium", "Studio"];

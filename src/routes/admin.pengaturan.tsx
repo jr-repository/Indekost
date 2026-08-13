@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Textarea } from "@/components/ui/textarea";
 import { PageHeader, Panel } from "@/components/portal/ui";
-import { brand } from "@/data/ernala";
+import { brand } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 export default Settings;

@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
-import { tenantTickets } from "@/data/ernala";
+import { tenantTickets } from "@/data/exc-kost";
 import { Plus } from "lucide-react";
 import { toast } from "sonner";
 

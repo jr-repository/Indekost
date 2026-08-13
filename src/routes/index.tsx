@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { rooms, img, facilities, whyErnala, stats, testimonials, faqs, nearby, rupiah, gallery } from "@/data/ernala";
+import { rooms, img, facilities, whyExcKost, stats, testimonials, faqs, nearby, rupiah, gallery } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 const iconMap: Record<string, any> = { TrainFront, BadgeCheck, ReceiptText, Users, Wifi, Wind, ShieldCheck, Sofa };
@@ -24,7 +24,7 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={img.hero} alt="Interior kamar kos Ernala Indekost Cisauk" className="h-full w-full object-cover" />
+          <img src={img.hero} alt="Interior kamar kos Exc Kost Cisauk" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/78 to-primary/40" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
@@ -36,7 +36,7 @@ function Home() {
               Kos modern yang terasa seperti rumah, 5 menit dari Stasiun Cisauk.
             </h1>
             <p className="mt-5 max-w-xl text-base text-primary-foreground/80">
-              Ernala Indekost menghadirkan hunian bersih, aman, dan terkelola profesional untuk pekerja muda di kawasan BSD. Kamar siap huni mulai Rp1.400.000/bulan.
+              Exc Kost menghadirkan hunian bersih, aman, dan terkelola profesional untuk pekerja muda di kawasan BSD. Kamar siap huni mulai Rp1.400.000/bulan.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild variant="cta" size="lg">
@@ -108,7 +108,7 @@ function Home() {
       <section className="mx-auto max-w-7xl px-4 pt-28 sm:px-6 lg:px-8">
         <SectionHead
           eyebrow="Pilihan kamar"
-          title="Kamar favorit penghuni Ernala"
+          title="Kamar favorit penghuni Exc Kost"
           desc="Empat tipe kamar dengan fasilitas lengkap, harga transparan, dan perawatan rutin."
           action={<Button asChild variant="outline"><Link to="/kamar">Lihat semua kamar</Link></Button>}
         />
@@ -144,7 +144,7 @@ function Home() {
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
-            <img src={img.lounge} alt="Common lounge Ernala Indekost" className="h-[420px] w-full rounded-2xl object-cover" />
+            <img src={img.lounge} alt="Common lounge Exc Kost" className="h-[420px] w-full rounded-2xl object-cover" />
             <Card className="absolute -bottom-8 left-6 hidden w-64 rounded-2xl border-border p-5 shadow-[var(--shadow-lift)] sm:block">
               <div className="flex items-center gap-1 text-accent">
                 {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-current" />)}
@@ -154,9 +154,9 @@ function Home() {
             </Card>
           </div>
           <div>
-            <SectionHead eyebrow="Kenapa Ernala" title="Bukan sekadar kos, tapi hunian yang dikelola serius" desc="Kami menggabungkan kenyamanan hunian modern dengan operasional yang rapi dan transparan." />
+            <SectionHead eyebrow="Kenapa Exc Kost" title="Bukan sekadar kos, tapi hunian yang dikelola serius" desc="Kami menggabungkan kenyamanan hunian modern dengan operasional yang rapi dan transparan." />
             <div className="grid gap-5 sm:grid-cols-2">
-              {whyErnala.map((w) => {
+              {whyExcKost.map((w) => {
                 const Icon = iconMap[w.icon] ?? BadgeCheck;
                 return (
                   <div key={w.title} className="flex gap-3">
@@ -194,13 +194,13 @@ function Home() {
             </div>
             <Button asChild variant="cta" className="mt-8"><Link to="/lokasi">Lihat peta & rute</Link></Button>
           </div>
-          <img src={img.map} alt="Peta lokasi Ernala Indekost Cisauk" className="h-[380px] w-full rounded-2xl object-cover" />
+          <img src={img.map} alt="Peta lokasi Exc Kost Cisauk" className="h-[380px] w-full rounded-2xl object-cover" />
         </div>
       </section>
 
       {/* GALLERY */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <SectionHead eyebrow="Galeri" title="Lihat suasana Ernala" desc="Foto kamar, area bersama, dan lingkungan sekitar." action={<Button asChild variant="outline"><Link to="/galeri">Buka galeri</Link></Button>} />
+        <SectionHead eyebrow="Galeri" title="Lihat suasana Exc Kost" desc="Foto kamar, area bersama, dan lingkungan sekitar." action={<Button asChild variant="outline"><Link to="/galeri">Buka galeri</Link></Button>} />
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {gallery.slice(0, 8).map((g, i) => (
             <div key={g.caption} className={`overflow-hidden rounded-2xl ${i === 0 ? "col-span-2 row-span-2" : ""}`}>
@@ -213,7 +213,7 @@ function Home() {
       {/* TESTIMONIALS */}
       <section className="bg-card py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHead eyebrow="Testimoni" title="Cerita penghuni Ernala" />
+          <SectionHead eyebrow="Testimoni" title="Cerita penghuni Exc Kost" />
           <div className="grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
               <Card key={t.name} className="rounded-2xl border-border p-6 shadow-none">

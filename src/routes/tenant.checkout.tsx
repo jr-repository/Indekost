@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { PageHeader, Panel } from "@/components/portal/ui";
-import { tenant, rupiah } from "@/data/ernala";
+import { tenant, rupiah } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 function Page() {

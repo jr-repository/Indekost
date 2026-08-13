@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard, StatusBadge } from "@/components/portal/ui";
-import { adminKpis, revenueSeries, occupancySeries, roomTypeMix, bookings, movements, maintenanceAdmin, surveys, rupiah } from "@/data/ernala";
+import { adminKpis, revenueSeries, occupancySeries, roomTypeMix, bookings, movements, maintenanceAdmin, surveys, rupiah } from "@/data/exc-kost";
 import { Building2, Wallet, DoorOpen, AlertTriangle } from "lucide-react";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
@@ -14,7 +14,7 @@ const pieColors = ["var(--color-chart-1)", "var(--color-chart-2)", "var(--color-
 function AdminDashboard() {
   return (
     <>
-      <PageHeader title="Dashboard" description="Ringkasan operasional Ernala Indekost Cisauk — Agustus 2026."
+      <PageHeader title="Dashboard" description="Ringkasan operasional Exc Kost Cisauk — Agustus 2026."
         actions={<><Button variant="outline" size="sm">Unduh laporan</Button><Button asChild variant="cta" size="sm"><Link to="/admin/booking">Buat booking</Link></Button></>} />
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {adminKpis.map((k, i) => <StatCard key={k.label} label={k.label} value={k.value} delta={k.delta} sub={k.sub} icon={icons[i]} />)}

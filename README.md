@@ -1,6 +1,6 @@
-# Ernala Indekost
+# Exc Kost
 
-Frontend mockup untuk Ernala Indekost Cisauk BSD.
+Frontend mockup untuk Exc Kost Cisauk BSD.
 
 ## Stack
 

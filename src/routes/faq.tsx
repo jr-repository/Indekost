@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { faqs, brand } from "@/data/ernala";
+import { faqs, brand } from "@/data/exc-kost";
 import { Search, MessageCircle } from "lucide-react";
 
 function Faq() {

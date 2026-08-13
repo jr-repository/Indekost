@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useState, type ReactNode } from "react";
 import { Menu, X, Phone, Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { brand } from "@/data/ernala";
+import { brand } from "@/data/exc-kost";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -26,8 +26,8 @@ export function PublicLayout({ children }: { children: ReactNode }) {
               E
             </span>
             <span className="leading-tight">
-              <span className="block font-display text-[15px] font-extrabold text-primary">Ernala</span>
-              <span className="block text-[11px] tracking-wide text-muted-foreground">INDEKOST CISAUK BSD</span>
+              <span className="block font-display text-[15px] font-extrabold text-primary">Exc Kost</span>
+              <span className="block text-[11px] tracking-wide text-muted-foreground">EXC KOST CISAUK BSD</span>
             </span>
           </Link>
           <nav className="ml-auto hidden items-center gap-1 lg:flex">
@@ -100,7 +100,7 @@ export function PublicLayout({ children }: { children: ReactNode }) {
               <span className="grid h-9 w-9 place-items-center rounded-[10px] bg-accent font-display text-sm font-extrabold text-accent-foreground">
                 E
               </span>
-              <span className="font-display text-lg font-extrabold">Ernala Indekost</span>
+              <span className="font-display text-lg font-extrabold">Exc Kost</span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-primary-foreground/70">{brand.tagline}</p>
             <div className="mt-5 flex gap-2">
@@ -143,7 +143,7 @@ export function PublicLayout({ children }: { children: ReactNode }) {
         </div>
         <div className="border-t border-white/10">
           <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-            <p>© 2026 Ernala Indekost Cisauk BSD. Mockup frontend — data dummy.</p>
+            <p>© 2026 Exc Kost Cisauk BSD. Mockup frontend — data dummy.</p>
             <p>Syarat & Ketentuan · Kebijakan Privasi</p>
           </div>
         </div>

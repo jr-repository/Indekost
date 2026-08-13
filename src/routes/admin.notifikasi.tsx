@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { notifications } from "@/data/ernala";
+import { notifications } from "@/data/exc-kost";
 
 export default function Page() {
   return (

@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { PageHeader, Panel } from "@/components/portal/ui";
-import { tenant } from "@/data/ernala";
+import { tenant } from "@/data/exc-kost";
 import { toast } from "sonner";
 
 function Page() {

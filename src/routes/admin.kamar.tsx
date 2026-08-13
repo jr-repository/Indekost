@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { roomUnits } from "@/data/ernala";
+import { roomUnits } from "@/data/exc-kost";
 
 export default function Page() {
   return (

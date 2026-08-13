@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { users } from "@/data/ernala";
+import { users } from "@/data/exc-kost";
 
 export default function Page() {
   return (

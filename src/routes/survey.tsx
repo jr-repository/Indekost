@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { rooms, img } from "@/data/ernala";
+import { rooms, img } from "@/data/exc-kost";
 import { CalendarDays, CheckCircle2, Clock } from "lucide-react";
 import { toast } from "sonner";
 
@@ -104,7 +104,7 @@ function Survey() {
 
           <aside className="space-y-4">
             <Card className="overflow-hidden rounded-2xl border-border p-0 shadow-none">
-              <img src={img.lounge} alt="Common area Ernala" className="h-40 w-full object-cover" />
+              <img src={img.lounge} alt="Common area Exc Kost" className="h-40 w-full object-cover" />
               <div className="p-5">
                 <h3 className="font-display text-sm font-bold text-primary">Yang akan kamu lihat</h3>
                 <ul className="mt-3 space-y-2 text-[13px] text-muted-foreground">

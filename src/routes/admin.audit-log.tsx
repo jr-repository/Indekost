@@ -1,6 +1,6 @@
 
 import { DataTablePage } from "@/components/portal/DataTablePage";
-import { auditLog } from "@/data/ernala";
+import { auditLog } from "@/data/exc-kost";
 
 export default function Page() {
   return (

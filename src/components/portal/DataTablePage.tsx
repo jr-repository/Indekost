@@ -5,7 +5,7 @@ import {
   Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle,
 } from "@/components/ui/sheet";
 import { PageHeader, Pager, Panel, StatusBadge, TableToolbar } from "./ui";
-import { rupiah } from "@/data/ernala";
+import { rupiah } from "@/data/exc-kost";
 import { Eye, Plus, Download } from "lucide-react";
 
 export type Col = { key: string; label: string; money?: boolean; badge?: boolean; className?: string };
