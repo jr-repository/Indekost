@@ -1,6 +1,7 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
+import { NotFoundPage } from "@/components/system/NotFoundPage";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -8,31 +9,14 @@ import { rooms, rupiah, nearby } from "@/data/ernala";
 import { Star, Check, MapPin, Ruler, Users, Building2, CalendarDays } from "lucide-react";
 import { RoomCard } from "./index";
 
-export const Route = createFileRoute("/kamar/$id")({
-  loader: ({ params }) => {
-    const room = rooms.find((r) => r.id === params.id);
-    if (!room) throw notFound();
-    return { room };
-  },
-  head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Kamar tidak ditemukan — Ernala" }, { name: "robots", content: "noindex" }] };
-    const r = loaderData.room;
-    return {
-      meta: [
-        { title: `${r.name} — Kamar ${r.type} Ernala Indekost Cisauk` },
-        { name: "description", content: `${r.description} Harga ${rupiah(r.price)} per bulan.` },
-        { property: "og:title", content: `${r.name} — Ernala Indekost` },
-        { property: "og:description", content: r.description },
-        { property: "og:image", content: r.cover },
-        { name: "twitter:image", content: r.cover },
-      ],
-    };
-  },
-  component: RoomDetail,
-});
-
 function RoomDetail() {
-  const { room } = Route.useLoaderData();
+  const { id } = useParams();
+  const room = rooms.find((item) => item.id === id);
+
+  if (!room) {
+    return <NotFoundPage />;
+  }
+
   const [active, setActive] = useState(0);
   const others = rooms.filter((r) => r.id !== room.id).slice(0, 3);
 
@@ -139,7 +123,7 @@ function RoomDetail() {
                 </div>
               </div>
               <Button asChild variant="cta" className="mt-6 w-full" size="lg">
-                <Link to="/booking" search={{ room: room.id }}>Booking kamar ini</Link>
+                <Link to={`/booking?room=${room.id}`}>Booking kamar ini</Link>
               </Button>
               <Button asChild variant="outline" className="mt-2 w-full"><Link to="/survey">Ajukan survey dulu</Link></Button>
               <p className="mt-4 text-center text-[12px] text-muted-foreground">Gratis dibatalkan dalam 24 jam setelah booking.</p>
@@ -157,6 +141,8 @@ function RoomDetail() {
     </PublicLayout>
   );
 }
+
+export default RoomDetail;
 
 function Row({ label, value }: { label: string; value: string }) {
   return (

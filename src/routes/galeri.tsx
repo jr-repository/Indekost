@@ -1,23 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { gallery, img } from "@/data/ernala";
-
-export const Route = createFileRoute("/galeri")({
-  head: () => ({
-    meta: [
-      { title: "Galeri Foto — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Foto kamar, common area, fasilitas, dan lingkungan sekitar Ernala Indekost Cisauk BSD." },
-      { property: "og:title", content: "Galeri Ernala Indekost" },
-      { property: "og:description", content: "Lihat suasana kamar dan area bersama Ernala Indekost." },
-      { property: "og:image", content: img.facade },
-      { name: "twitter:image", content: img.facade },
-    ],
-  }),
-  component: Gallery,
-});
 
 const cats = ["Semua", "Kamar", "Common Area", "Fasilitas", "Bangunan", "Lingkungan"];
 
@@ -62,3 +48,5 @@ function Gallery() {
     </PublicLayout>
   );
 }
+
+export default Gallery;

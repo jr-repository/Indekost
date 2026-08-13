@@ -1,23 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { brand, nearby, img } from "@/data/ernala";
 import { MapPin, TrainFront, Car, Bike, Clock, Phone } from "lucide-react";
-
-export const Route = createFileRoute("/lokasi")({
-  head: () => ({
-    meta: [
-      { title: "Lokasi & Akses — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Ernala Indekost berada di Cibogo, Cisauk, 1,2 km dari Stasiun Cisauk dan 1,4 km dari Intermoda BSD." },
-      { property: "og:title", content: "Lokasi Ernala Indekost Cisauk" },
-      { property: "og:description", content: "Akses mudah ke Stasiun Cisauk, Intermoda BSD, dan kawasan Digital Hub." },
-      { property: "og:image", content: img.map },
-      { name: "twitter:image", content: img.map },
-    ],
-  }),
-  component: Location,
-});
 
 function Location() {
   return (
@@ -80,3 +66,5 @@ function Location() {
     </PublicLayout>
   );
 }
+
+export default Location;

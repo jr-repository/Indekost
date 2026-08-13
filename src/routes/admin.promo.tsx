@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { DataTablePage } from "@/components/portal/DataTablePage";
 import { promos } from "@/data/ernala";
 
-export const Route = createFileRoute("/admin/promo")({
-  component: () => (
+export default function Page() {
+  return (
     <DataTablePage
       title="Promo"
       description="Kode promo aktif dan performanya."
@@ -11,5 +11,5 @@ export const Route = createFileRoute("/admin/promo")({
       columns={[{ key: "code", label: "Kode" }, { key: "name", label: "Nama" }, { key: "value", label: "Nilai" }, { key: "period", label: "Periode" }, { key: "used", label: "Terpakai" }, { key: "status", label: "Status", badge: true }]}
       createLabel="Buat promo"
     />
-  ),
-});
+  );
+}

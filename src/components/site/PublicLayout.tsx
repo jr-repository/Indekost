@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { useState, type ReactNode } from "react";
 import { Menu, X, Phone, Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,6 +16,7 @@ const nav = [
 
 export function PublicLayout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
@@ -31,15 +32,21 @@ export function PublicLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav className="ml-auto hidden items-center gap-1 lg:flex">
             {nav.map((n) => (
-              <Link
+              <NavLink
                 key={n.to}
                 to={n.to}
-                activeOptions={{ exact: n.to === "/" }}
-                className="rounded-[10px] px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-primary"
-                activeProps={{ className: "text-primary font-semibold bg-secondary" }}
+                end={n.to === "/"}
+                className={({ isActive }) =>
+                  [
+                    "rounded-[10px] px-3 py-2 text-sm transition-colors hover:bg-secondary hover:text-primary",
+                    isActive
+                      ? "bg-secondary font-semibold text-primary"
+                      : "text-muted-foreground",
+                  ].join(" ")
+                }
               >
                 {n.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
           <div className="ml-auto flex items-center gap-2 lg:ml-0">

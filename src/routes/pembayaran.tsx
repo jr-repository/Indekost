@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
@@ -6,18 +6,6 @@ import { Button } from "@/components/ui/button";
 import { rupiah } from "@/data/ernala";
 import { Copy, CheckCircle2, Clock, Landmark, QrCode, Wallet } from "lucide-react";
 import { toast } from "sonner";
-
-export const Route = createFileRoute("/pembayaran")({
-  head: () => ({
-    meta: [
-      { title: "Pembayaran — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Halaman pembayaran mockup Ernala Indekost: virtual account, QRIS, dan transfer bank." },
-      { property: "og:title", content: "Pembayaran Ernala Indekost" },
-      { property: "og:description", content: "Simulasi pembayaran booking kamar Ernala Indekost." },
-    ],
-  }),
-  component: Payment,
-});
 
 const methods = [
   { id: "va", label: "BCA Virtual Account", icon: Landmark, desc: "Otomatis terverifikasi" },
@@ -109,3 +97,5 @@ function Payment() {
     </PublicLayout>
   );
 }
+
+export default Payment;

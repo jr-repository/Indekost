@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/portal/ui";
@@ -28,4 +28,4 @@ function Page() {
   );
 }
 
-export const Route = createFileRoute("/tenant/pindah-kamar")({ component: Page });
+export default Page;

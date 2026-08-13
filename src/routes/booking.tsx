@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
@@ -10,21 +10,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { rooms, rupiah } from "@/data/ernala";
 import { ShieldCheck } from "lucide-react";
 
-export const Route = createFileRoute("/booking")({
-  validateSearch: (s: Record<string, unknown>) => ({ room: typeof s.room === "string" ? s.room : rooms[2].id }),
-  head: () => ({
-    meta: [
-      { title: "Booking Kamar — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Amankan kamar pilihanmu di Ernala Indekost Cisauk BSD. Proses booking cepat dengan rincian biaya transparan." },
-      { property: "og:title", content: "Booking Kamar Ernala Indekost" },
-      { property: "og:description", content: "Booking kamar kos modern dekat Stasiun Cisauk." },
-    ],
-  }),
-  component: Booking,
-});
-
 function Booking() {
-  const { room: roomId } = Route.useSearch();
+  const [searchParams] = useSearchParams();
+  const roomId = searchParams.get("room") ?? rooms[2].id;
   const room = rooms.find((r) => r.id === roomId) ?? rooms[2];
   const [duration, setDuration] = useState("6");
   const discount = duration === "12" ? 0.1 : duration === "6" ? 0.05 : 0;
@@ -120,3 +108,5 @@ function F({ label, children }: { label: string; children: React.ReactNode }) {
 function Row({ l, v }: { l: string; v: string }) {
   return <div className="flex justify-between text-muted-foreground"><span>{l}</span><span className="font-medium text-foreground">{v}</span></div>;
 }
+
+export default Booking;

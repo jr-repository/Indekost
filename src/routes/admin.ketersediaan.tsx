@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatusBadge } from "@/components/portal/ui";
 import { roomUnits } from "@/data/ernala";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export const Route = createFileRoute("/admin/ketersediaan")({ component: Availability });
+export default Availability;
 
 const days = Array.from({ length: 31 }, (_, i) => i + 1);
 const colorOf = (s: string) =>

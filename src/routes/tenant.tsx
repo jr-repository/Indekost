@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PortalShell, type NavItem } from "@/components/portal/PortalShell";
 import { tenant } from "@/data/ernala";
 import {
@@ -22,10 +21,13 @@ const items: NavItem[] = [
   { to: "/tenant/bantuan", label: "Help", icon: LifeBuoy, group: "Akun" },
 ];
 
-export const Route = createFileRoute("/tenant")({
-  head: () => ({ meta: [{ title: "Portal Penghuni — Ernala Indekost" }, { name: "robots", content: "noindex" }] }),
-  component: () => (
-    <PortalShell items={items} title="Portal Penghuni" badge="PORTAL PENGHUNI"
-      user={{ name: tenant.name, role: "Penghuni B-203", avatar: tenant.avatar }} />
-  ),
-});
+export default function TenantLayout() {
+  return (
+    <PortalShell
+      items={items}
+      title="Portal Penghuni"
+      badge="PORTAL PENGHUNI"
+      user={{ name: tenant.name, role: "Penghuni B-203", avatar: tenant.avatar }}
+    />
+  );
+}

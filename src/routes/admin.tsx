@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PortalShell, type NavItem } from "@/components/portal/PortalShell";
 import {
   LayoutDashboard, Building2, Layers, DoorClosed, CalendarRange, Target, ClipboardCheck,
@@ -33,10 +32,13 @@ const items: NavItem[] = [
   { to: "/admin/audit-log", label: "Audit Log", icon: History, group: "Sistem" },
 ];
 
-export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Portal Admin — Ernala Indekost" }, { name: "robots", content: "noindex" }] }),
-  component: () => (
-    <PortalShell items={items} title="Portal Admin" badge="PORTAL ADMIN"
-      user={{ name: "Nadia Prameswari", role: "Manager", avatar: "https://i.pravatar.cc/120?img=45" }} />
-  ),
-});
+export default function AdminLayout() {
+  return (
+    <PortalShell
+      items={items}
+      title="Portal Admin"
+      badge="PORTAL ADMIN"
+      user={{ name: "Nadia Prameswari", role: "Manager", avatar: "https://i.pravatar.cc/120?img=45" }}
+    />
+  );
+}

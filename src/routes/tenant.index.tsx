@@ -1,10 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard, StatusBadge } from "@/components/portal/ui";
 import { tenant, tenantBills, tenantTickets, announcements, tenantActivity, rupiah } from "@/data/ernala";
 import { BedDouble, ReceiptText, Wrench, CalendarDays } from "lucide-react";
 
-export const Route = createFileRoute("/tenant/")({ component: Overview });
+export default Overview;
 
 function Overview() {
   const bill = tenantBills[0];

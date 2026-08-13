@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard, StatusBadge } from "@/components/portal/ui";
@@ -6,7 +6,7 @@ import { adminKpis, revenueSeries, occupancySeries, roomTypeMix, bookings, movem
 import { Building2, Wallet, DoorOpen, AlertTriangle } from "lucide-react";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-export const Route = createFileRoute("/admin/")({ component: AdminDashboard });
+export default AdminDashboard;
 
 const icons = [Building2, Wallet, DoorOpen, AlertTriangle];
 const pieColors = ["var(--color-chart-1)", "var(--color-chart-2)", "var(--color-chart-3)", "var(--color-chart-4)"];

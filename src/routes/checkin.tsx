@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
@@ -9,18 +9,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
 import { UploadCloud, CheckCircle2, KeyRound } from "lucide-react";
 import { toast } from "sonner";
-
-export const Route = createFileRoute("/checkin")({
-  head: () => ({
-    meta: [
-      { title: "Online Check-in — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Lengkapi dokumen dan jadwal kedatangan sebelum masuk kamar di Ernala Indekost Cisauk BSD." },
-      { property: "og:title", content: "Online Check-in Ernala Indekost" },
-      { property: "og:description", content: "Proses check-in digital tanpa antre." },
-    ],
-  }),
-  component: Checkin,
-});
 
 const steps = ["Verifikasi data", "Unggah dokumen", "Jadwal kedatangan", "Selesai"];
 
@@ -100,3 +88,5 @@ function Checkin() {
 function F({ label, children }: { label: string; children: React.ReactNode }) {
   return <div><Label className="text-[13px] text-muted-foreground">{label}</Label><div className="mt-1.5">{children}</div></div>;
 }
+
+export default Checkin;

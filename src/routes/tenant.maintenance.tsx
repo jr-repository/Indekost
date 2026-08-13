@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -47,4 +47,4 @@ function Page() {
   );
 }
 
-export const Route = createFileRoute("/tenant/maintenance")({ component: Page });
+export default Page;

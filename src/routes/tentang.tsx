@@ -1,24 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { SectionHead } from "./index";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { img, stats } from "@/data/ernala";
 import { HeartHandshake, Sparkles, ShieldCheck, Leaf } from "lucide-react";
-
-export const Route = createFileRoute("/tentang")({
-  head: () => ({
-    meta: [
-      { title: "Tentang Ernala Indekost — Kos Modern Cisauk BSD" },
-      { name: "description", content: "Cerita, nilai, dan tim di balik Ernala Indekost Cisauk BSD — hunian kos modern yang dikelola profesional sejak 2020." },
-      { property: "og:title", content: "Tentang Ernala Indekost" },
-      { property: "og:description", content: "Hunian kos modern yang dikelola profesional di Cisauk, BSD." },
-      { property: "og:image", content: img.facade },
-      { name: "twitter:image", content: img.facade },
-    ],
-  }),
-  component: About,
-});
 
 const values = [
   { icon: HeartHandshake, title: "Pelayanan personal", desc: "Setiap penghuni punya pendamping dari tim kami, bukan sekadar nomor kamar." },
@@ -103,3 +89,5 @@ function About() {
     </PublicLayout>
   );
 }
+
+export default About;

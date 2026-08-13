@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useMemo, useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { RoomCard, SectionHead } from "./index";
@@ -9,18 +9,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { rooms, rupiah, img } from "@/data/ernala";
 import { SlidersHorizontal, LayoutGrid } from "lucide-react";
-
-export const Route = createFileRoute("/kamar/")({
-  head: () => ({
-    meta: [
-      { title: "Daftar Kamar — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Pilih tipe kamar Standard, Deluxe, Premium, atau Studio di Ernala Indekost Cisauk. Harga mulai Rp1,4 juta per bulan." },
-      { property: "og:title", content: "Daftar Kamar — Ernala Indekost" },
-      { property: "og:description", content: "Kamar kos modern dekat Stasiun Cisauk dengan fasilitas lengkap." },
-    ],
-  }),
-  component: RoomList,
-});
 
 const types = ["Standard", "Deluxe", "Premium", "Studio"];
 
@@ -131,3 +119,5 @@ function RoomList() {
     </PublicLayout>
   );
 }
+
+export default RoomList;

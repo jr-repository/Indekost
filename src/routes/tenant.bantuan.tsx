@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel } from "@/components/portal/ui";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -35,4 +35,4 @@ function Page() {
   );
 }
 
-export const Route = createFileRoute("/tenant/bantuan")({ component: Page });
+export default Page;

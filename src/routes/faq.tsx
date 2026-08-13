@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -7,18 +7,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { faqs, brand } from "@/data/ernala";
 import { Search, MessageCircle } from "lucide-react";
-
-export const Route = createFileRoute("/faq")({
-  head: () => ({
-    meta: [
-      { title: "FAQ — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Pertanyaan umum soal harga, deposit, aturan tamu, pembayaran, dan survey di Ernala Indekost Cisauk BSD." },
-      { property: "og:title", content: "FAQ Ernala Indekost" },
-      { property: "og:description", content: "Jawaban lengkap seputar sewa kamar di Ernala Indekost." },
-    ],
-  }),
-  component: Faq,
-});
 
 function Faq() {
   const [q, setQ] = useState("");
@@ -61,3 +49,5 @@ function Faq() {
     </PublicLayout>
   );
 }
+
+export default Faq;

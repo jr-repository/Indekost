@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { DataTablePage } from "@/components/portal/DataTablePage";
 import { notifications } from "@/data/ernala";
 
-export const Route = createFileRoute("/admin/notifikasi")({
-  component: () => (
+export default function Page() {
+  return (
     <DataTablePage
       title="Notifications"
       description="Template dan jadwal pengiriman notifikasi."
@@ -11,5 +11,5 @@ export const Route = createFileRoute("/admin/notifikasi")({
       columns={[{ key: "title", label: "Judul" }, { key: "channel", label: "Kanal" }, { key: "audience", label: "Penerima" }, { key: "schedule", label: "Jadwal" }, { key: "status", label: "Status", badge: true }]}
       createLabel="Buat notifikasi"
     />
-  ),
-});
+  );
+}

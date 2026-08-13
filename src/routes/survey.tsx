@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { Card } from "@/components/ui/card";
@@ -10,18 +10,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { rooms, img } from "@/data/ernala";
 import { CalendarDays, CheckCircle2, Clock } from "lucide-react";
 import { toast } from "sonner";
-
-export const Route = createFileRoute("/survey")({
-  head: () => ({
-    meta: [
-      { title: "Ajukan Survey — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Jadwalkan survey gratis ke Ernala Indekost Cisauk BSD. Pilih tanggal, jam, dan tipe kamar yang ingin dilihat." },
-      { property: "og:title", content: "Ajukan Survey Ernala Indekost" },
-      { property: "og:description", content: "Survey gratis, konfirmasi maksimal 1x24 jam." },
-    ],
-  }),
-  component: Survey,
-});
 
 const slots = ["09.00", "10.00", "11.00", "13.00", "14.00", "15.00", "16.00", "17.00"];
 const dates = ["Kam, 14 Agu", "Jum, 15 Agu", "Sab, 16 Agu", "Min, 17 Agu", "Sen, 18 Agu", "Sel, 19 Agu"];
@@ -145,3 +133,5 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
     </div>
   );
 }
+
+export default Survey;

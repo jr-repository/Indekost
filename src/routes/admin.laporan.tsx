@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Button } from "@/components/ui/button";
 import { PageHeader, Panel, StatCard } from "@/components/portal/ui";
 import { revenueSeries, occupancySeries, roomTypeMix, rupiah } from "@/data/ernala";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Download } from "lucide-react";
 
-export const Route = createFileRoute("/admin/laporan")({ component: Reports });
+export default Reports;
 
 function Reports() {
   return (

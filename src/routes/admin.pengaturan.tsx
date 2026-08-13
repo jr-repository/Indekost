@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -8,7 +8,7 @@ import { PageHeader, Panel } from "@/components/portal/ui";
 import { brand } from "@/data/ernala";
 import { toast } from "sonner";
 
-export const Route = createFileRoute("/admin/pengaturan")({ component: Settings });
+export default Settings;
 
 function Settings() {
   return (

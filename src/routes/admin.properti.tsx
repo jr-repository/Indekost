@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PageHeader, StatusBadge } from "@/components/portal/ui";
 import { properties } from "@/data/ernala";
 import { Plus } from "lucide-react";
 
-export const Route = createFileRoute("/admin/properti")({ component: Properties });
+export default Properties;
 
 function Properties() {
   return (

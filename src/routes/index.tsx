@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   ArrowRight, Star, MapPin, TrainFront, BadgeCheck, ReceiptText, Users, Search,
@@ -11,20 +11,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { rooms, img, facilities, whyErnala, stats, testimonials, faqs, nearby, rupiah, gallery } from "@/data/ernala";
 import { toast } from "sonner";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Ernala Indekost Cisauk BSD — Kos Modern Dekat Stasiun Cisauk" },
-      { name: "description", content: "Kos modern warm living di Cibogo, Cisauk. 5 menit ke Stasiun Cisauk & Intermoda BSD. Kamar mulai Rp1,4 juta/bulan." },
-      { property: "og:title", content: "Ernala Indekost Cisauk BSD" },
-      { property: "og:description", content: "Hunian kos modern, bersih, dan terawat dekat kawasan BSD." },
-      { property: "og:image", content: img.hero },
-      { name: "twitter:image", content: img.hero },
-    ],
-  }),
-  component: Home,
-});
 
 const iconMap: Record<string, any> = { TrainFront, BadgeCheck, ReceiptText, Users, Wifi, Wind, ShieldCheck, Sofa };
 
@@ -110,7 +96,7 @@ function Home() {
               </div>
               <div className="flex items-end">
                 <Button asChild variant="cta" className="h-10 w-full md:w-auto" onClick={() => toast.success("Menampilkan 4 kamar tersedia")}>
-                  <Link to="/kamar" search={{}}><Search className="h-4 w-4" />Cari kamar</Link>
+                  <Link to="/kamar"><Search className="h-4 w-4" />Cari kamar</Link>
                 </Button>
               </div>
             </div>
@@ -334,10 +320,12 @@ export function RoomCard({ room }: { room: (typeof rooms)[number] }) {
             <p className="text-[11px] text-muted-foreground">per bulan</p>
           </div>
           <Button asChild variant="cta" size="sm">
-            <Link to="/kamar/$id" params={{ id: room.id }}>Lihat detail</Link>
+            <Link to={`/kamar/${room.id}`}>Lihat detail</Link>
           </Button>
         </div>
       </div>
     </Card>
   );
 }
+
+export default Home;

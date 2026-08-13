@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -39,4 +39,4 @@ function Page() {
   );
 }
 
-export const Route = createFileRoute("/tenant/komplain")({ component: Page });
+export default Page;

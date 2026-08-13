@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { DataTablePage } from "@/components/portal/DataTablePage";
 import { users } from "@/data/ernala";
 
-export const Route = createFileRoute("/admin/pengguna")({
-  component: () => (
+export default function Page() {
+  return (
     <DataTablePage
       title="Users & Roles"
       description="Akun pengelola dan hak aksesnya."
@@ -11,5 +11,5 @@ export const Route = createFileRoute("/admin/pengguna")({
       columns={[{ key: "name", label: "Nama" }, { key: "email", label: "Email" }, { key: "role", label: "Peran" }, { key: "last", label: "Login terakhir" }, { key: "status", label: "Status", badge: true }]}
       createLabel="Undang pengguna"
     />
-  ),
-});
+  );
+}

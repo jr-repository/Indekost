@@ -1,24 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { PublicLayout } from "@/components/site/PublicLayout";
 import { SectionHead } from "./index";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { facilities, img } from "@/data/ernala";
 import * as Icons from "lucide-react";
-
-export const Route = createFileRoute("/fasilitas")({
-  head: () => ({
-    meta: [
-      { title: "Fasilitas — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Wi-Fi 100 Mbps, AC, kamar mandi dalam, pantry, laundry, rooftop lounge, CCTV 24 jam, dan parkir tertutup di Ernala Indekost Cisauk." },
-      { property: "og:title", content: "Fasilitas Ernala Indekost" },
-      { property: "og:description", content: "Fasilitas kamar dan area bersama yang dirawat setiap hari." },
-      { property: "og:image", content: img.lounge },
-      { name: "twitter:image", content: img.lounge },
-    ],
-  }),
-  component: Facilities,
-});
 
 const showcase = [
   { src: img.lounge, title: "Common Lounge", desc: "Ruang santai dan co-working dengan colokan di setiap kursi, buka 24 jam." },
@@ -84,3 +70,5 @@ function Facilities() {
     </PublicLayout>
   );
 }
+
+export default Facilities;

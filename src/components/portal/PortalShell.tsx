@@ -1,4 +1,4 @@
-import { Link, Outlet, useRouterState } from "@tanstack/react-router";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { useState, type ComponentType } from "react";
 import { Menu, X, Bell, Search, LogOut, ChevronDown } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -19,7 +19,7 @@ export function PortalShell({
   user: { name: string; role: string; avatar: string };
 }) {
   const [open, setOpen] = useState(false);
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { pathname } = useLocation();
   const groups = Array.from(new Set(items.map((i) => i.group ?? "Menu")));
 
   return (

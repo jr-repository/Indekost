@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,18 +6,6 @@ import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { img } from "@/data/ernala";
 import { ArrowLeft } from "lucide-react";
-
-export const Route = createFileRoute("/masuk")({
-  head: () => ({
-    meta: [
-      { title: "Masuk / Daftar — Ernala Indekost Cisauk BSD" },
-      { name: "description", content: "Masuk ke portal penghuni atau portal admin Ernala Indekost Cisauk BSD." },
-      { property: "og:title", content: "Masuk — Ernala Indekost" },
-      { property: "og:description", content: "Portal penghuni dan admin Ernala Indekost." },
-    ],
-  }),
-  component: Login,
-});
 
 function Login() {
   const [role, setRole] = useState<"tenant" | "admin">("tenant");
@@ -81,3 +69,5 @@ function Login() {
     </div>
   );
 }
+
+export default Login;
