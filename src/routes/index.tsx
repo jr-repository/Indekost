@@ -22,7 +22,7 @@ function Home() {
   return (
     <PublicLayout>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="relative">
         <div className="absolute inset-0">
           <img src={img.hero} alt="Interior kamar kos Exc Kost Cisauk" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/78 to-primary/40" />
@@ -58,7 +58,7 @@ function Home() {
         </div>
 
         {/* SEARCH BAR */}
-        <div className="relative mx-auto -mb-10 max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto -mb-10 max-w-6xl px-4 sm:px-6 lg:px-8">
           <Card className="translate-y-8 rounded-2xl border-border p-5 shadow-[var(--shadow-lift)]">
             <div className="grid gap-3 md:grid-cols-[1fr_1fr_1fr_auto]">
               <div>

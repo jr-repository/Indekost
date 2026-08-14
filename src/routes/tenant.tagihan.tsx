@@ -22,11 +22,12 @@ function Page() {
         <div className="overflow-x-auto">
           <Table>
             <TableHeader><TableRow className="bg-secondary/50 hover:bg-secondary/50">
-              {["Invoice", "Periode", "Jatuh tempo", "Sewa", "Listrik", "Total", "Status"].map((h) => <TableHead key={h} className="text-[12px] font-semibold text-primary">{h}</TableHead>)}
+              {["No", "Invoice", "Periode", "Jatuh tempo", "Sewa", "Listrik", "Total", "Status"].map((h) => <TableHead key={h} className="text-[12px] font-semibold text-primary">{h}</TableHead>)}
             </TableRow></TableHeader>
             <TableBody>
-              {tenantBills.map((b) => (
+              {tenantBills.map((b, index) => (
                 <TableRow key={b.id} className="text-[13px] hover:bg-secondary/40">
+                  <TableCell className="font-medium text-muted-foreground">{index + 1}</TableCell>
                   <TableCell>{b.id}</TableCell><TableCell>{b.period}</TableCell><TableCell>{b.due}</TableCell>
                   <TableCell>{rupiah(b.amount)}</TableCell><TableCell>{rupiah(b.extra)}</TableCell>
                   <TableCell className="font-semibold">{rupiah(b.amount + b.extra)}</TableCell>

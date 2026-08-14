@@ -50,6 +50,9 @@ export function DataTablePage({
           <Table>
             <TableHeader>
               <TableRow className="bg-secondary/50 hover:bg-secondary/50">
+                <TableHead className="w-16 whitespace-nowrap text-[12px] font-semibold text-primary">
+                  No
+                </TableHead>
                 {columns.map((c) => (
                   <TableHead key={c.key} className="whitespace-nowrap text-[12px] font-semibold text-primary">{c.label}</TableHead>
                 ))}
@@ -59,6 +62,9 @@ export function DataTablePage({
             <TableBody>
               {filtered.map((r, i) => (
                 <TableRow key={i} className="hover:bg-secondary/40">
+                  <TableCell className="whitespace-nowrap text-[13px] font-medium text-muted-foreground">
+                    {i + 1}
+                  </TableCell>
                   {columns.map((c) => (
                     <TableCell key={c.key} className={`whitespace-nowrap text-[13px] ${c.className ?? ""}`}>
                       {c.badge ? <StatusBadge status={String(r[c.key])} /> : c.money ? rupiah(Number(r[c.key])) : String(r[c.key])}
@@ -73,7 +79,7 @@ export function DataTablePage({
               ))}
               {filtered.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={columns.length + 1} className="py-10 text-center text-sm text-muted-foreground">
+                  <TableCell colSpan={columns.length + 2} className="py-10 text-center text-sm text-muted-foreground">
                     Tidak ada data yang cocok dengan pencarian.
                   </TableCell>
                 </TableRow>

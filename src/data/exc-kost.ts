@@ -139,7 +139,7 @@ export const nearby = [
 ];
 
 export const testimonials = [
-  { name: "Rani Ayu Pratiwi", role: "UI Designer, Digital Hub", text: "Lokasinya juara. Tinggal 5 menit ke Stasiun Cisauk, jadi commuting ke Jakarta gampang. Kamarnya bersih dan pengelolanya responsif.", avatar: "https://i.pravatar.cc/120?img=47", rating: 5 },
+  { name: "Pratiwi", role: "UI Designer, Digital Hub", text: "Lokasinya juara. Tinggal 5 menit ke Stasiun Cisauk, jadi commuting ke Jakarta gampang. Kamarnya bersih dan pengelolanya responsif.", avatar: "https://i.pravatar.cc/120?img=47", rating: 5 },
   { name: "Bagas Nugroho", role: "Software Engineer", text: "Wi-Fi stabil buat WFH, dan lounge-nya enak dipakai kerja kalau bosan di kamar. Sudah 1,5 tahun di sini.", avatar: "https://i.pravatar.cc/120?img=12", rating: 5 },
   { name: "Siti Maharani", role: "Marketing Associate", text: "Yang paling saya suka: pembayaran dan laporan kerusakan semua lewat portal. Nggak perlu chat berkali-kali.", avatar: "https://i.pravatar.cc/120?img=32", rating: 4 },
 ];
@@ -172,8 +172,8 @@ export const stats = [
 /* ---------------- Tenant dummy ---------------- */
 
 export const tenant = {
-  name: "Rani Ayu Pratiwi",
-  email: "rani.ayu@mail.com",
+  name: "Pratiwi",
+  email: "demo@mail.com",
   phone: "+62 813-2211-9087",
   avatar: "https://i.pravatar.cc/120?img=47",
   room: rooms[2],
@@ -282,7 +282,7 @@ export const bookings = [
 ];
 
 export const tenants = [
-  { id: "TN-0142", name: "Rani Ayu Pratiwi", room: "B-203", start: "1 Feb 2026", end: "31 Jan 2027", status: "Aktif", billing: "Lancar", phone: "+62 813-2211-9087" },
+  { id: "TN-0142", name: "Pratiwi", room: "B-203", start: "1 Feb 2026", end: "31 Jan 2027", status: "Aktif", billing: "Lancar", phone: "+62 813-2211-9087" },
   { id: "TN-0141", name: "Bagas Nugroho", room: "C-301", start: "5 Jan 2026", end: "4 Jan 2027", status: "Aktif", billing: "Lancar", phone: "+62 812-4455-1290" },
   { id: "TN-0138", name: "Siti Maharani", room: "A-104", start: "12 Nov 2025", end: "11 Nov 2026", status: "Aktif", billing: "Overdue", phone: "+62 878-9911-2200" },
   { id: "TN-0134", name: "Dimas Aryo", room: "B-206", start: "1 Okt 2025", end: "30 Sep 2026", status: "Akan habis", billing: "Lancar", phone: "+62 856-1122-7788" },
@@ -291,7 +291,7 @@ export const tenants = [
 ];
 
 export const invoices = [
-  { id: "INV-2026-0812", tenant: "Rani Ayu Pratiwi", room: "B-203", period: "Agu 2026", due: "5 Agu 2026", amount: 1936000, status: "Belum dibayar" },
+  { id: "INV-2026-0812", tenant: "Pratiwi", room: "B-203", period: "Agu 2026", due: "5 Agu 2026", amount: 1936000, status: "Belum dibayar" },
   { id: "INV-2026-0811", tenant: "Siti Maharani", room: "A-104", period: "Agu 2026", due: "5 Agu 2026", amount: 1712000, status: "Overdue" },
   { id: "INV-2026-0810", tenant: "Bagas Nugroho", room: "C-301", period: "Agu 2026", due: "5 Agu 2026", amount: 2244000, status: "Lunas" },
   { id: "INV-2026-0809", tenant: "Dimas Aryo", room: "B-206", period: "Agu 2026", due: "5 Agu 2026", amount: 2018000, status: "Lunas" },
@@ -300,7 +300,7 @@ export const invoices = [
 ];
 
 export const paymentsAdmin = [
-  { id: "PAY-90231", tenant: "Rani Ayu Pratiwi", date: "3 Jul 2026", method: "BCA VA", amount: 1922000, ref: "8801 2244 9087", status: "Berhasil" },
+  { id: "PAY-90231", tenant: "Pratiwi", date: "3 Jul 2026", method: "BCA VA", amount: 1922000, ref: "8801 2244 9087", status: "Berhasil" },
   { id: "PAY-90244", tenant: "Bagas Nugroho", date: "4 Agu 2026", method: "QRIS", amount: 2244000, ref: "QR-778120", status: "Berhasil" },
   { id: "PAY-90250", tenant: "Dimas Aryo", date: "5 Agu 2026", method: "Transfer Mandiri", amount: 2018000, ref: "TRF-991002", status: "Menunggu verifikasi" },
   { id: "PAY-90255", tenant: "Melia Kusuma", date: "10 Agu 2026", method: "BCA VA", amount: 1850000, ref: "8801 5566 1122", status: "Berhasil" },
@@ -308,7 +308,7 @@ export const paymentsAdmin = [
 ];
 
 export const deposits = [
-  { id: "DEP-0142", tenant: "Rani Ayu Pratiwi", room: "B-203", amount: 1750000, held: "1 Feb 2026", status: "Ditahan" },
+  { id: "DEP-0142", tenant: "Pratiwi", room: "B-203", amount: 1750000, held: "1 Feb 2026", status: "Ditahan" },
   { id: "DEP-0141", tenant: "Bagas Nugroho", room: "C-301", amount: 2050000, held: "5 Jan 2026", status: "Ditahan" },
   { id: "DEP-0129", tenant: "Nabila Zahra", room: "C-305", amount: 2200000, held: "1 Agu 2025", status: "Dikembalikan" },
   { id: "DEP-0134", tenant: "Dimas Aryo", room: "B-206", amount: 1850000, held: "1 Okt 2025", status: "Potongan Rp150.000" },
@@ -331,7 +331,7 @@ export const maintenanceAdmin = [
 export const complaintsAdmin = [
   { id: "CMP-0231", tenant: "Siti Maharani", topic: "Kebisingan malam hari", severity: "Sedang", created: "9 Agu 2026", status: "Ditindaklanjuti" },
   { id: "CMP-0230", tenant: "Bagas Nugroho", topic: "Parkir motor penuh", severity: "Rendah", created: "6 Agu 2026", status: "Selesai" },
-  { id: "CMP-0229", tenant: "Rani Ayu Pratiwi", topic: "Paket tertukar di loker", severity: "Rendah", created: "2 Agu 2026", status: "Selesai" },
+  { id: "CMP-0229", tenant: "Pratiwi", topic: "Paket tertukar di loker", severity: "Rendah", created: "2 Agu 2026", status: "Selesai" },
 ];
 
 export const housekeeping = [
